@@ -43,6 +43,9 @@ Check its all worked
 `python manage.py makemigrations`
 `python manage.py migrate`
 
+## Create a SuperUser
+`python manage.py createsuperuser`
+use `admin` for username
 
 
 # Requirements and Iterations
