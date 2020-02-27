@@ -1,7 +1,12 @@
 {% extends 'somethingsnappydb_app/base.html' %}
 
 {% block content %}
+{% load render_table from django_tables2 %}
 
-Here will be a list of patients.
+<div class = "db_table">
+Patient list
 
+{% render_table table %}
+
+</div>
 {% endblock %}
