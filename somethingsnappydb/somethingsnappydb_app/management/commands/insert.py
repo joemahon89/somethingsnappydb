@@ -99,7 +99,10 @@ def insert_data(cleaned_data):
 				chrom = 17,
 				pos = position,
 				ref = ref,
-				alt = alt)
+				alt = alt,
+				raw_g = row["Variant Genome"],
+				raw_c = row["Variant cDNA"],
+				raw_p = row["Variant Protein"])
 
 		# Insert RefGenome information
 		refgenome, created = RefGenome.objects.get_or_create(
