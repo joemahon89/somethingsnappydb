@@ -46,7 +46,7 @@ class Sample (models.Model):
         blank=False,
         validators=[MinValueValidator(-1),
                     MaxValueValidator(2)])
-    somatic_informaton=models.ForeignKey(SomaticInformation,blank=True,null=True, on_delete=models.CASCADE)
+    somatic_information=models.ForeignKey(SomaticInformation,blank=True,null=True, on_delete=models.CASCADE)
 
 class Sequencer (models.Model):
     sequencer_id_auto = models.AutoField(primary_key=True)
