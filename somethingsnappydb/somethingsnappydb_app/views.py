@@ -16,4 +16,7 @@ def variant(request):
 
 def position_variants(request):
     return render (request,'somethingsnappydb_app/position_variants.html')
+
+def all_data(request):
+    return render (request, 'somethingsnappydb_app/all_data.html')
     

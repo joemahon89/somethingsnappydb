@@ -6,5 +6,7 @@ urlpatterns = [
     path('patient',views.patient, name='patient'),
     path('variant',views.variant, name='variant'),
     path('position_variants',views.position_variants, name='position_variants'),
+    path('data',views.all_data, name='data'),
+
 ]
 
