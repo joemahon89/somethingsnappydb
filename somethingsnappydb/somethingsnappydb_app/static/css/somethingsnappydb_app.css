@@ -1,3 +1,13 @@
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    top: 0;
+  }
+
 h1 a, h2 a {
     color: #ffffff;
 
@@ -8,13 +18,12 @@ h4 a {
 
 }
 
-.page-header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-  }
+h3 {
+    padding-left: 40;
+    padding-bottom: 20;
+}
+
+
 
 .db_table{
     padding-left: 40;
