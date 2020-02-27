@@ -45,27 +45,55 @@ Check its all worked
 
 ## Create a SuperUser
 `python manage.py createsuperuser`  
-use `admin` for username  
+use `admin` for username 
 
 
 # Requirements and Iterations
 
 ## Requirements
-
+https://trello.com/b/J8jBIkFV/something-snappy-db
 
 ## Iteration 1
+- Cleaned up data
+- In MySQL database
+- No Frontend
+- Queryable using SQL
+
+Cleaning Up Data
+- Examine
+- Missing fields
+	- 'Affected Relatives'. Y or N but sometimes blank
+	- 'Proband'. Y or N but sometimes blank - unknown
+	- 'Variant protein'.p.(=)
+						p.?
+						p.?
+						p.(=)
+						p.?
+						p.(=)
+						p.?, p.(=)
+						NA
+						p.?, ?
+	- 'Evidence Codes' Some missing unknown
+	- No lab number field, how would you like filled? For expansion
+	- Sample type - what are these, would you like another? - unknown sample type table
+	- No transcript for c. nomens and p. nomens - inlcude? What transcript?
+
+## Validation check on the variant
 
 
 ## Iteration 2
+- Basic frontend
+- Display genes and variants within genes
+- Viewing only
 
+## Iteration 3/4
+- Searching functionality
+validating nomenclature
 
-## Iteration 3
+## Iteration 3/4
+- Ability to add or change 
 
-
-## Iteration 4
-
-
-
+Nomenclature
 
 
 
