@@ -2,5 +2,61 @@
 
 {% block content %}
 
-here will show a table of filtered variants by position. 
+
+<!-- <div class="container" style="background-color: #eee;"> -->
+<div class="container">
+    <div class=" w-auto" >
+        <br><br>
+    {% if variants %}
+        <h3>{{ variants|length}} Variants at position {{chromosome}}-{{position}}</h3>
+    {% else %}
+        <h3>0 Variants at Position {{chromosome}}-{{position}}</h3>
+    {% endif %}
+    <!-- <p>
+    <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+    </p> -->
+    
+    <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Chromosome</th>
+              <th scope="col">Genomic Position</th>
+              <th scope="col">g.nomen</th>
+              <th scope="col">c.Nomen</th>
+              <th scope="col">p.Nomen</th>
+              <th scope="col">Genome Assembly</th>
+              <th scope="col">Pathogenicity</th>
+              <th scope="col">Analysed By</th>
+              <th scope="col">Date Analysed</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for var in variants %}
+            <tr>
+              <td>{{chromosome}}</td>
+              <td>{{position}}</td>
+              <td>{{var.variant_id.raw_g}}</td>
+              <td>{{var.variant_id.raw_c}}</td>
+              <td>{{var.variant_id.raw_p}}</td>
+              <td>{{var.genome_id.name}}</td>
+              <td>{{var.interpretation_set.all.0.pathogenicity}}</td>
+              <td>{{var.interpretation_set.all.0.analysed_by}}</td>
+              <td>{{var.interpretation_set.all.0.date_analysed}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
 {% endblock %}

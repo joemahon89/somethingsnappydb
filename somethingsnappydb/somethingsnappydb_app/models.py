@@ -73,6 +73,9 @@ class Variant (models.Model):
     pos = models.IntegerField()
     ref = models.CharField(max_length=15)
     alt = models.CharField(max_length=15)
+    raw_g = models.CharField(max_length=80)
+    raw_c = models.CharField(max_length=80)
+    raw_p = models.CharField(max_length=80)
 
 class RefGenome (models.Model):
     genome_id_auto = models.AutoField(primary_key=True)

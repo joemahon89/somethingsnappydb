@@ -9,7 +9,7 @@ class PatientTable(tables.Table):
     affected_relatives = tables.Column(verbose_name="Affected Relatives")
 
     class Meta:
-        model: Patient
+        model= Patient
         template_name = "django_tables2/bootstrap.html"
         fields = ("first_name","last_name","dob","proband","affected_relatives")
 
@@ -21,7 +21,7 @@ class VariantTable(tables.Table):
     alt = tables.Column(verbose_name="ALT")
 
     class Meta:
-        model: Variant
+        model= Variant
         template_name = "django_tables2/bootstrap.html"
         #attrs = {'class': 'paleblue'}
         fields = ("variant_id_auto","chrom","pos","ref","alt")
