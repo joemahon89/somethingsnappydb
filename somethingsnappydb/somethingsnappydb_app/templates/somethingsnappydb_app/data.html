@@ -3,14 +3,8 @@
 {% block content %}
 {% load render_table from django_tables2 %}
 
-<h3> Patients</h3>
+This will show all the data.
 
+{% render_table object_list %}
 
-<div class = "db_table">
-
-    {% render_table table %}
-
-</div>
 {% endblock %}
-
-
