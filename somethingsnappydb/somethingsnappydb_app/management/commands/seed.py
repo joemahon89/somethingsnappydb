@@ -4,6 +4,7 @@ import pandas as pd
 import datetime
 from dateutil.relativedelta import relativedelta
 from django.core.management.base import BaseCommand
+import somethingsnappydb_app.management.commands.insert as inserter
 
 
 
@@ -80,6 +81,9 @@ class Data:
 
 
 
+
+
+
 class Command(BaseCommand):
 	help = "Seed the database"
 
@@ -99,6 +103,7 @@ class Command(BaseCommand):
 		return data
 
 
+
 	def handle(self, *args, **kwargs):
 			# Create a list containing samples in the given path
 			if kwargs['data_path']:
@@ -106,4 +111,5 @@ class Command(BaseCommand):
 				# Clean the data
 				cleaned_data_df = self.clean_data(data_path[0])
 				# Insert the data
+				inserter.insert_data(cleaned_data_df)
 				
