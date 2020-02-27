@@ -62,7 +62,7 @@ class Data:
 		for index, row in self.df.iterrows():
 			# Is the value na? (No value)
 			if pd.isna(row["Evidence Codes"]):
-				value = "Unknown"
+				value = "U"
 			else:
 				value = row["Evidence Codes"]
 			self.df.loc[index, "Evidence Codes"] = value

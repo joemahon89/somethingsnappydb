@@ -40,10 +40,9 @@ def insert_data(cleaned_data):
 	# Loop through each row
 	for index, row in cleaned_data.df.iterrows():
 
-
 		# Insert patient information
-		first_name = row["Name"].split(" ")[0]
-		last_name = row["Name"].split(" ")[1]
+		first_name = row["Name"].split(" ")[1]
+		last_name = row["Name"].split(" ")[2]
 		patient, created = Patient.objects.get_or_create(
 				first_name = first_name,
 				last_name = last_name,
@@ -84,9 +83,12 @@ def insert_data(cleaned_data):
 
 
 		# Insert variant information
-		pos = row["Variant Genome"].remove("(").remove(")")
+		pos = row["Variant Genome"].replace("(","").replace(")","")
 		pos = pos.split(".")[1]
+		if pos[0] == "?":
+			pos = pos.split("_")[1]
 		position = re.findall(r"([0-9]*)",pos)[0]
+
 		if ">" in pos:
 			ref = pos.split(">")[0][-1]
 			alt = pos.split(">")[1][0]
@@ -101,7 +103,7 @@ def insert_data(cleaned_data):
 
 		# Insert RefGenome information
 		refgenome, created = RefGenome.objects.get_or_create(
-				name = "Unknown",)		
+				name = "?",)		
 
 		analysisvariant, created = AnalysisVariant.objects.get_or_create(
 				variant_id = variant,
@@ -113,18 +115,18 @@ def insert_data(cleaned_data):
 				analysis_variant_id = analysisvariant,
 				date_analysed = datetime.datetime.now(),
 				analysed_by = user,
-				pathogenicity = row["Pathogenicity"],
+				pathogenicity = row["Pathogenicity Code"],
 				active = True,)
 
-		criteria, created = Interpretation.objects.get_or_create(
-				criteria_code = row["Criteria"],
-				description = "test description",
-				)
+		for criteria_code in row["Evidence Codes"].split(","):
+			criteria, created = Criteria.objects.get_or_create(
+					criteria_code = criteria_code,
+					description = "test description",
+					)
 
-
-		interpretationcriteria, created = InterpretationCriteria.objects.get_or_create(
-				criteria_id = criteria,
-				interpretation_id = interpretation,
-				)
+			interpretationcriteria, created = InterpretationCriteria.objects.get_or_create(
+					criteria_id = criteria,
+					interpretation_id = interpretation,
+					)
 
 		
