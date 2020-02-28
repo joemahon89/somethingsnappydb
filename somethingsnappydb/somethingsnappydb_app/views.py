@@ -25,14 +25,17 @@ def search(request):
     query = request.GET['query']
     if "-" in query:
         chromosome = int(query.split("-")[0])
-        position = query.split("-")[1]
+        position = query.split("-", 1)[1]
         # Two positions provided
         if "-" in position:
+            print("YES")
             position1 = int(position.split("-")[0])
             position2 = int(position.split("-")[1])
-            return redirect('position_variants', 
+            return redirect('position_variants_multiple', 
                         chromosome=chromosome,
-                        position=position)
+                        position1=position1,
+                        position2=position2,
+                        )
 
         else:
             position = int(position)
@@ -91,15 +94,16 @@ def query_variants_at_pos(chromosome, position):
 
 
 # Between positions
-def position_variants_multiple(request, chromosome, position):
+def position_variants_multiple(request, chromosome, position1, position2):
     """View that gets variants at a position"""
-    variants = query_variants_between_pos(chromosome, position)
+    variants = query_variants_between_pos(chromosome, position1, position2)
     context = {"variants" : variants,
-                "position": position,
+                "position1": position1,
+                "position2": position2,
                 "chromosome": chromosome,
                 }
     return render(request,
-                'somethingsnappydb_app/position_variants.html',
+                'somethingsnappydb_app/position_variants_multiple.html',
                 context)
 
 def query_variants_between_pos(chromosome, position1, position2):
@@ -108,8 +112,9 @@ def query_variants_between_pos(chromosome, position1, position2):
     variants_at_pos = AnalysisVariant.objects.select_related(
                                     'genome_id').all().select_related(
                                     'variant_id').all().filter(
-                         variant_id__pos=position,
-                         variant_id__chrom=chromosome)
+                                     variant_id__pos__gte=position1,
+                                     variant_id__pos__lte=position2,
+                                     variant_id__chrom=chromosome)
     variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
     return variants_at_pos
 
