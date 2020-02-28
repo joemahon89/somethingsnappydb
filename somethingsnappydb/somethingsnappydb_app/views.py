@@ -49,20 +49,8 @@ def variant(request):
 
 
 def position_variants(request, chromosome, position):
-    variants_at_pos = AnalysisVariant.objects.select_related(
-                                    'genome_id').all().select_related(
-                                    'variant_id').all().filter(
-                         variant_id__pos=position,
-                         variant_id__chrom=chromosome)
-    variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
-    #for i in variants_at_pos:
-        #print(i.variant_id.raw_g)
-        #print(vars(i))
-        #print(i.genome_id.name)
-        #print(i.interpretation_set)
-        #print("#####")
-        #print(vars(i.interpretation_set.all()[0].pathogenicity))
-        #print(i.interpretation_set.all()[0].pathogenicity)
+    """View that gets variants at a position"""
+    variants = query_variants_at_pos(chromosome, position)
     context = {"variants" : variants_at_pos,
                 "position": position,
                 "chromosome": chromosome,
@@ -71,6 +59,16 @@ def position_variants(request, chromosome, position):
                 'somethingsnappydb_app/position_variants.html',
                 context)
 
+def query_variants_at_pos(chromosome, position):
+    """Performs the django query to look for variants at a position.
+    Includes the interpretations and genome build information"""
+    variants_at_pos = AnalysisVariant.objects.select_related(
+                                    'genome_id').all().select_related(
+                                    'variant_id').all().filter(
+                         variant_id__pos=position,
+                         variant_id__chrom=chromosome)
+    variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
+    return variants_at_pos
 
 
 class PatientListView(SingleTableView):
