@@ -35,7 +35,16 @@ def search(request):
 
 def home(request):
     #return HttpResponse("Welcome to the Something Snappy Database")
-    return render (request,'somethingsnappydb_app/home.html')
+    patients = Patient.objects.count()
+    patientsAF = Patient.objects.filter(affected_relatives=0).count()
+    variants = Variant.objects.count()
+    pathogenic_variants4 = Interpretation.objects.filter(pathogenicity=5).count()
+    pathogenic_variants5 = Interpretation.objects.filter(pathogenicity=4).count()
+    pathogenic_variants = pathogenic_variants4 + pathogenic_variants5
+
+    context = {"patients":patients,"variants":variants,"pathogenic_variants":pathogenic_variants,"patientsAF":patientsAF}
+
+    return render (request,'somethingsnappydb_app/home.html',context)
 
 def patient(request):
     return render (request,'somethingsnappydb_app/patient.html')
@@ -77,6 +86,7 @@ class PatientListView(SingleTableView):
     model = Patient
     table_class = PatientTable
     template_name='somethingsnappydb_app/patient.html'
+
 
 class VariantListView(SingleTableView):
     model = Variant
