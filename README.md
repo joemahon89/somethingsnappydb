@@ -46,6 +46,12 @@ Check that this has all worked correctly
 `python manage.py createsuperuser`  
 use `admin` for username 
 
+### Seeding the database with data
+The database is seeded using a Django management command.  
+`python manage.py seed -d ../BRCA1_variants.txt`
+This will read the provided data, clean it where necessary before  
+importing it into the database
+
 
 ## Requirements and Iterations
 
@@ -54,6 +60,7 @@ https://trello.com/b/J8jBIkFV/something-snappy-db
 
 ### Iteration 1
 - Cleaned up data  
+- Translation of data into 3rd Normal Form
 - In MySQL database  
 - No Frontend  
 - Queryable using SQL  
@@ -77,10 +84,16 @@ https://trello.com/b/J8jBIkFV/something-snappy-db
 - Creation of new HGVS c. and p. nomenclature  
 - Logins and access control
 
-
-
-
 ## User Guide
 This database contains information about variants that have been detected.  
+It is currently read only, with variants, patients and variants at a  
+particular position. Future iterations will include a way to interact with  
+the data and additional metrics.
+
+## Validation Process
+Data is currently imported into the database using a django management  
+command. To ensure that the data has been imported correctly, a validation
+script has been written that checks the data already imported against a 
+curated test set of data.
 
 
