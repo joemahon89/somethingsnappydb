@@ -1,8 +1,8 @@
 
 .header {
     padding: 40px;
-    text-align: center;
-    background: #49b9a3;
+    text-align: left;
+    background: #ffffff;
     color: white;
     font-size: 20px;
     top: 0;
@@ -10,7 +10,6 @@
 
 h1 a, h2 a {
     color: #ffffff;
-
 }
 
 h5 a {
@@ -22,8 +21,6 @@ h3 {
     padding-left: 40;
     padding-bottom: 20;
 }
-
-
 
 .db_table{
     padding-left: 40;
