@@ -9,6 +9,8 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Font Awesome for glyphs -->
+  <script src="https://kit.fontawesome.com/5d7d46bcf4.js" crossorigin="anonymous"></script>
 
   <title>Something Snappy Variant Database</title>
 </head>
@@ -18,8 +20,8 @@
 <body>
   <main>
 
-            
-              <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="/">Something Snappy Variant Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,30 +29,40 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="/variant">All Variants</a>
           </li>
-        <li class="nav-item">
+          
+          <li class="nav-item">
             <a class="nav-link" href="/patient">All Patients</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/joemahon89/somethingsnappydb/">Help</a>
+          </li>
+
         </ul>
+        <i class="fas fa-question-circle fa-2x" data-toggle="tooltip" title="Search for a variant at a genomic position (e.g 17-41247941)" style="color:white"></i>
         <form class="form-inline my-2 my-md-0" action="/results/" method="get">
           <input class="form-control" type="text" placeholder="Search" name="query"><button class="btn btn-light my-2 my-sm-0" type="submit" value="Search">Search</button>
         </form>
       </div>
     </nav>
 
-            <div class="content">
-                <p>
-                    <p>
-              <!-- MAIN BLOCK START -->
-              {% block content %}
-              {% endblock %}
-              <!-- MAIN BLOCK END -->
-            </div>
+
+    <!-- Block content -->
+    <div class="content">
+        <p>
+            <p>
+      <!-- MAIN BLOCK START -->
+      {% block content %}
+      {% endblock %}
+      <!-- MAIN BLOCK END -->
+    </div>
 
 
   </main>
@@ -64,4 +76,3 @@
 
 </body>
 </html>
-

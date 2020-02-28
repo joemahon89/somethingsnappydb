@@ -1,9 +1,12 @@
 {% extends 'somethingsnappydb_app/base.html' %}
 
 {% block content %}
+{% load staticfiles %}
+
 <div class="header">
-    <h1><a href="/">Something Snappy Variant Database</a></h1>
-    <h4><a href="/">A variant database created for the Grey Sloan Memorial Genetics Laboratory Hub</a></h4>
+    <img src= {% static 'Something_Snappy.png' %} alt= 'Invalid picture' >
+    <p></p>
+    <h5>A variant database created for the Grey Sloan Memorial Genetics Laboratory Hub</h5>
 </div>
 
 
