@@ -8,9 +8,9 @@
     <div class=" w-auto" >
         <br><br>
     {% if variants %}
-        <h3>{{ variants|length}} Variants at position {{chromosome}}-{{position}}</h3>
+        <h3>{{ variants|length}} Variants between position chr{{chromosome}} g.{{position1}} and g.{{position2}}</h3>
     {% else %}
-        <h3>0 Variants at Position chr{{chromosome}} g.{{position}}</h3>
+        <h3>0 Variants between position chr{{chromosome}} g.{{position1}} and g.{{position2}}</h3>
     {% endif %}
     <!-- <p>
     <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
@@ -34,8 +34,8 @@
           <tbody>
             {% for var in variants %}
             <tr>
-              <td>{{chromosome}}</td>
-              <td>{{position}}</td>
+              <td>{{var.variant_id.chrom}}</td>
+              <td>{{var.variant_id.pos}}</td>
               <td>{{var.variant_id.raw_g}}</td>
               <td>{{var.variant_id.raw_c}}</td>
               <td>{{var.variant_id.raw_p}}</td>

@@ -25,12 +25,25 @@ def search(request):
     query = request.GET['query']
     if "-" in query:
         chromosome = int(query.split("-")[0])
-        position = int(query.split("-")[1])
-        return redirect('position_variants', 
+        position = query.split("-", 1)[1]
+        # Two positions provided
+        if "-" in position:
+            print("YES")
+            position1 = int(position.split("-")[0])
+            position2 = int(position.split("-")[1])
+            return redirect('position_variants_multiple', 
+                        chromosome=chromosome,
+                        position1=position1,
+                        position2=position2,
+                        )
+
+        else:
+            position = int(position)
+            return redirect('position_variants', 
                         chromosome=chromosome,
                         position=position)
     else:
-        pass
+        return redirect('home')
 
 
 def home(request):
@@ -60,7 +73,7 @@ def variant(request):
 def position_variants(request, chromosome, position):
     """View that gets variants at a position"""
     variants = query_variants_at_pos(chromosome, position)
-    context = {"variants" : variants_at_pos,
+    context = {"variants" : variants,
                 "position": position,
                 "chromosome": chromosome,
                 }
@@ -79,6 +92,31 @@ def query_variants_at_pos(chromosome, position):
     variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
     return variants_at_pos
 
+
+# Between positions
+def position_variants_multiple(request, chromosome, position1, position2):
+    """View that gets variants at a position"""
+    variants = query_variants_between_pos(chromosome, position1, position2)
+    context = {"variants" : variants,
+                "position1": position1,
+                "position2": position2,
+                "chromosome": chromosome,
+                }
+    return render(request,
+                'somethingsnappydb_app/position_variants_multiple.html',
+                context)
+
+def query_variants_between_pos(chromosome, position1, position2):
+    """Performs the django query to look for variants between two positions.
+    Includes the interpretations and genome build information"""
+    variants_at_pos = AnalysisVariant.objects.select_related(
+                                    'genome_id').all().select_related(
+                                    'variant_id').all().filter(
+                                     variant_id__pos__gte=position1,
+                                     variant_id__pos__lte=position2,
+                                     variant_id__chrom=chromosome)
+    variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
+    return variants_at_pos
 
 class PatientListView(SingleTableView):
     model = Patient
