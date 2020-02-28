@@ -1,4 +1,4 @@
-from django.urls import path 
+from django.urls import path, include
 from . import views
 from somethingsnappydb_app.views import PatientListView,VariantListView
 
@@ -10,6 +10,7 @@ urlpatterns = [
     path('position_variants/<str:chromosome>/<str:position>/',
 			    	views.position_variants, 
 			    	name='position_variants'),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 
