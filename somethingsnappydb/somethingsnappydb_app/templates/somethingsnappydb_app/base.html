@@ -44,6 +44,20 @@
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/joemahon89/somethingsnappydb/">Help</a>
           </li>
+          
+          
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" > User: {{ user.get_username }} </a>
+            </li>
+            <li class="nav-item">  
+              <a class="nav-link" href="/accounts/logout">Logout</a>
+            </li>
+            {% else %}
+              <a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Login</a>
+            {% endif %} 
+          
+            
 
         </ul>
         <i class="fas fa-question-circle fa-2x" data-toggle="tooltip" title="Search for a variant at a genomic position (e.g 17-41247941)" style="color:white"></i>
@@ -52,13 +66,15 @@
         </form>
       </div>
     </nav>
-
+  
+    
     <!-- Block content -->
     <div class="content">
       <!-- MAIN BLOCK START -->
       <p></p>
       {% block content %}
       {% endblock %}
+
       <!-- MAIN BLOCK END -->
     </div>
 
