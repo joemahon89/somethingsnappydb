@@ -23,7 +23,6 @@ class VariantTable(tables.Table):
     class Meta:
         model= Variant
         template_name = "django_tables2/bootstrap.html"
-        #attrs = {'class': 'paleblue'}
         fields = ("variant_id_auto","chrom","pos","ref","alt")
 
 
