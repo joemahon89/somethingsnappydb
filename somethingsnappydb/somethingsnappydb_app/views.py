@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views.generic import ListView
 from django_tables2 import SingleTableView
 from .tables import PatientTable, VariantTable
+from django.contrib.auth.decorators import login_required
 
 from .models import (Patient,
                     SampleType,
@@ -45,7 +46,7 @@ def search(request):
     else:
         return redirect('home')
 
-
+@login_required
 def home(request):
     #return HttpResponse("Welcome to the Something Snappy Database")
     patients = Patient.objects.count()
@@ -59,17 +60,21 @@ def home(request):
 
     return render (request,'somethingsnappydb_app/home.html',context)
 
+"""
+@login_required
 def patient(request):
     return render (request,'somethingsnappydb_app/patient.html')
 
-
+@login_required
 def variant(request):
     return render (request,'somethingsnappydb_app/variant.html')
 
+"""
 
 # Position Variants Related Views
 
 
+@login_required
 def position_variants(request, chromosome, position):
     """View that gets variants at a position"""
     variants = query_variants_at_pos(chromosome, position)
@@ -94,6 +99,7 @@ def query_variants_at_pos(chromosome, position):
 
 
 # Between positions
+@login_required
 def position_variants_multiple(request, chromosome, position1, position2):
     """View that gets variants at a position"""
     variants = query_variants_between_pos(chromosome, position1, position2)
@@ -117,6 +123,7 @@ def query_variants_between_pos(chromosome, position1, position2):
                                      variant_id__chrom=chromosome)
     variants_at_pos = variants_at_pos.prefetch_related("interpretation_set").all()
     return variants_at_pos
+
 
 class PatientListView(SingleTableView):
     model = Patient
