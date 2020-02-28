@@ -1,0 +1,10 @@
+{% extends 'somethingsnappydb_app/base.html' %}
+
+{% block content %}
+{% load render_table from django_tables2 %}
+
+This will show all the data.
+
+{% render_table object_list %}
+
+{% endblock %}

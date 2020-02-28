@@ -1,0 +1,101 @@
+Name	Age	Proband	Affected Relatives	Stage	Description	Sequencer	Variant cDNA	Variant Protein	Variant Genome		Pathogenicity Code	Evidence Codes
+ Pearl Dixon	49	Y	Y	2	 Mucinous	HiSeq	c.303T>G	p.(Tyr101*)	g.41256277A>C		5	"PS1,PS2,PM1,PM4"
+ Betty Schmidt	40			3	 Mixed_type	HiSeq	c.314A>G	"p.(Tyr105Cys), p.Tyr105Cys"	g.41256266T>C		4	"PS1,PM1,PM2,PP1"
+ Connie Fields	48	Y	Y	1	 Tubular	HiSeq	c.321del	p.(Phe107Leufs*12)	g.41256259del		4	"PS1,PM1,PM2,PP1"
+ Rosemarie Simpson	43	Y	Y	2	 Tubular	MiSeq	c.329dup	p.(Glu111Glyfs*3)	g.41256251dup		4	"PS2,PS3,PM6,PM4"
+ Veronica Delgado	61	Y	Y	1	 Mixed_type	HiSeq	c.370A>G	p.Ile124Val	g.41256210T>C		5	"PS1,PS2,PM1,PM4"
+ Melinda Roberts	37	Y	Y	3	 Invasive_lobular	HiSeq	c.380G>A	p.Ser127Asn	g.41256200C>T		5	"PS1,PS2,PM1,PM4"
+ Annette Dawson	42	Y	Y	1	 Mixed_type	HiSeq	c.390C>G	p.(Tyr130*)	g.41256190G>C		5	"PS2,PS3,PM6,PM4"
+ Brandi Reeves	69	Y	Y	1	 Invasive_lobular	HiSeq	c.396C>A	"p.(Asn132Lys), p.Asn132Lys"	g.41256184G>T		5	"PS2,PS3,PM6,PM4"
+ Olive Johnson	35	Y	Y	1	 Medullary	MiSeq	c.593+8A>G	?	g.41249253T>C		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Eunice Potter	54	Y	Y	1	 Tubular	MiSeq	c.593+16C>G	p.(=)	g.41249245G>C		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Alison Higgins	31	Y	Y	1	 Invasive_ductal	HiSeq	c.593+25A>T	p.?	g.41249236T>A		4	"PS1,PS2,PM1,PM4"
+ Myra Meyer	28	N	Y	1	 Papillary	HiSeq	c.593+77T>C	p.?	g.41249184A>G		5	"PS2,PS3,PM6,PM4"
+ Terri Hill	63	N		2	 Other	HiSeq	c.594-225G>A	p.(=)	g.41248164C>T		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Mandy Tyler	66	N		3	 Medullary	HiSeq	c.594-203_670+515del	p.?	g.41247348_41248142del		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Kayla Andrews	62	N		1	 Papillary	HiSeq	c.594-60 del	p.(=)	g.41247999del		4	"PS1,PS2,PM1,PM4"
+ Kimberly Massey	30	N		3	 Mixed_type	HiSeq	c.594-34T>C	"p.?, p.(=)"	g.41247973A>G		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Kellie Pearson	56	N		1	 Mucinous	HiSeq	c.594-15G>C	NA	g.41247954C>G		5	"PS1,PS2,PM1,PM4"
+ Dana Zimmerman	55	Y	N	3	 Papillary	HiSeq	c.594-2A>C	"p.?, ?"	g.41247941T>G		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Teri Mann	41	Y	N	2	 Invasive_lobular	MiSeq	c.594-2A>G	p.?	g.41247941T>C		5	"PS2,PS3,PM6,PM4"
+ Emma Ramsey	34	Y	N	2	 Other	MiSeq	c.594_597del	"p.(Ser198Argfs*35), p.?"	g.41247936_41247939del		5	"PS1,PS2,PM1,PM4"
+ Vivian Hunt	58	Y	N	1	 Medullary	MiSeq	c.595G>A	p.(Val199Met)	g.41247938C>T		4	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Myrtle Fletcher	59	Y	Y	3	 Invasive_ductal	HiSeq	c.612G>C	p.Leu204Phe	g.41247921C>G		5	"PS2,PS3,PM6,PM4"
+ Eloise Black	39	Y	Y	2	 Papillary	HiSeq	c.616C>T	p.(Gln206*)	g.41247917G>A		4	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Holly Fernandez	25	Y	Y	3	 Medullary	HiSeq	c.637A>G	p.Arg213Gly	g.41247896T>C		4	
+ Doris Cole	27	Y	Y	3	 Invasive_lobular	MiSeq	c.639G>A	p.(=)	g.41247894C>T		5	"PS1,PS2,PM1,PM4"
+ Genevieve Nguyen	47	Y	Y	1	 Mucinous	HiSeq	c.641A>G	p.(Asp214Gly)	g.41247892T>C		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Harriet Crawford	52	Y	Y	3	 Invasive_ductal	HiSeq	c.652T>C	p.(=)	g.41247881A>G		5	"PS2,PS3,PM6,PM4"
+ Johanna Burke	65	Y	Y	1	 Mucinous	HiSeq	c.661G>T	p.Ala221Ser	g.41247872C>A		5	"PS2,PS3,PM6,PM4"
+ Bonnie Pena	36	Y	Y	3	 Other	HiSeq	c.669G>A	p.(=)	g.41247864C>T		4	
+ Lorraine Wise	68	Y		3	 Other	MiSeq	c.670G>C	"p.?, p.(Ala224Pro)"	g.41247863C>G		5	"PS1,PS2,PM1,PM4"
+ Shawna Arnold	26			2	 Invasive_ductal	MiSeq	c.670+1delG	?	g.41247862delC		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Nettie Rose	45	N		3	 Tubular	HiSeq	c.670+1G>T	p.?	g.41247862C>A		5	"PS2,PS3,PM6,PM4"
+ Darla Sullivan	53	N		3	 Mucinous	HiSeq	c.670+7G>A	?	g.41247856C>T		5	"PS2,PS3,PM6,PM4"
+ Carolyn Colon	38	Y	N	3	 Invasive_ductal	HiSeq	c.670+8C>A	p.?	g.41247855G>T		5	
+ Irene James	57	Y	N	3	 Other	HiSeq	c.670+8C>T	"p.?, p.=, ?, NA"	g.41247855G>A		4	
+ Molly Copeland	67	Y	N	3	 Mixed_type	HiSeq	c.1881_1882insCC	p.(Ser628Profs*5)	g.41245666_41245667insGG		3	"PS2,PS3,PM6,PM4"
+ Joanna White	51	Y	N	2	 Papillary	HiSeq	c.1884T>G	p.Ser628Arg	g.41245664A>C		3	
+ Megan Greene	32	Y	N	1	 Invasive_ductal	HiSeq	c.1892dup	p.(Ser632Lysfs*4)	g.41245656dup		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Marie Brady	70	Y	N	3	 Invasive_lobular	HiSeq	c.1895G>A	p.Ser632Asn	g.41245653C>T		5	"PS2,PS3,PM6,PM4"
+ Renee Duncan	60	Y	N	1	 Papillary	MiSeq	c.3816C>A	p.(Asn1272Lys)	g.41243732G>T		4	"PS4,PP1,PM1,PP6"
+ Sherri Castillo	50	Y	N	2	 Medullary	MiSeq	c.3820dup	p.(Val1274Glyfs*13)	g.41243728dup		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Jill Hodges	44	Y	N	2	 Tubular	MiSeq	c.3820dupG	p.(Val1274fs)	g.41243728dup		5	
+ Amy Rodgers	33	Y	N	3	 Papillary	HiSeq	c.3823A>G	"p.(Ile1275Val), p.Ile1275Val"	g.41243725T>C		5	"PS2,PS3,PM6,PM4"
+ Jo Curtis	29	Y	N	2	 Mixed_type	HiSeq	c.3835G>A	p.(Ala1279Thr)	g.41243713C>T		5	"PS2,PS3,PM6,PM5"
+ Rachael Davis	46	Y		3	 Tubular	HiSeq	c.3839_3840inv	p.(Ser1280*)	g.41243708_41243709inv		5	"PS4,PP1,PM1,PP6"
+ Eleanor Lee	64			3	 Medullary	MiSeq	c.3839_3843delinsAGGC	p.(Ser1280*)	g.41243705_41243709delinsGCCT		5	"PS1,PS2,PM1,PM4"
+ Amber Cummings	63			3	 Papillary	HiSeq	c.3841C>T	p.(Gln1281*)	g.41243707G>A		3	
+ Teresa Fuller	32	Y	Y	3	 Other	HiSeq	c.3845A>T	p.(Glu1282Val)	g.41243703T>A		4	"PS4,PP1,PM1,PP6"
+ Jana Daniels	41	Y	Y	2	 Other	HiSeq	c.3851A>G	p.His1284Arg	g.41243697T>C		5	"PS4,PP1,PM1,PP6"
+ Jackie Byrd	48	Y	Y	2	 Mucinous	HiSeq	c.3858_3861del	p.(Ser1286Argfs*20)	g.41243687_41243690del		5	"PS4,PP1,PM1,PP6"
+ Jacqueline Hanson	55	Y	Y	1	 Tubular	MiSeq	c.3869_3870del	p.(Lys1290Metfs*4)	g.41243678_41243679del		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Monica Fowler	65	Y	Y	1	 Mixed_type	MiSeq	c.3878C>T	p.Ala1293Val	g.41243670G>A		5	"PS1,PS2,PM1,PM4"
+ Bethany Spencer	62	Y	Y	1	 Invasive_ductal	HiSeq	c.3889delT	p.(fs)	g.41243659delA		4	"PS1,PS2,PM1,PM4"
+ Belinda Hall	34	Y	Y	1	 Tubular	HiSeq	c.3891_3893del	"p.(Ser1298del), p.(Ser1297del)"	g.41243655_41243657del		5	"PS1,PM1,PM2,PP1"
+ Claire Cox	26	Y	Y	2	 Invasive_lobular	HiSeq	c.3903T>A	"p.(Ser1301Arg), p.(Ser1340Arg)"	g.41243645A>T		5	"PS1,PM1,PM2,PP1"
+ Janie Hamilton	43	Y	N	2	 Mucinous	HiSeq	c.3904G>T	p.(Glu1302*)	g.41243644C>A		5	
+ Jennifer Steele	31	Y	N	2	 Medullary	HiSeq	c.3910G>T	p.(Glu1304*)	g.41243638C>A		5	"PS4,PP1,PM1,PP6"
+ Hilda Morris	52	Y	N	2	 Mixed_type	HiSeq	c.3914A>T	p.(Asp1305Val)	g.41243634T>A		5	"PS1,PS2,PS3,PM4,PM5,PM6,PP1"
+ Bernadette Harvey	25	Y	N	2	 Mucinous	HiSeq	c.3916_3917del	p.(Leu1306Aspfs*23)	g.41243631_41243632del		5	
+ Velma Dean	27	Y	N	1	 Invasive_lobular	HiSeq	c.3918G>A	p.=	g.41243630C>T		5	"PS1,PS2,PM1,PM4"
+ Carol Carson	61	Y	N	2	 Other	MiSeq	c.3918G>T	p.(Leu1306Phe)	g.41243630C>A		5	"PS1,PS2,PM1,PM4"
+ Faye Kelley	30	Y	N	2	 Medullary	MiSeq	c.3929C>A	p.Thr1310Lys	g.41243619G>T		5	"PS1,PS2,PM1,PM4"
+ Kendra Chapman	69	Y	N	1	 Invasive_lobular	MiSeq	c.3931_3934del	"p.(Asn1311Profs*6), p.(Asn1311fs)"	g.41243614_41243617del		5	
+ Elizabeth Paul	39	Y	N	1	 Invasive_ductal	HiSeq	c.3959C>G	p.(Ser1320Cys)	g.41243589G>C		5	
+ Margie Neal	64	Y	N	3	 Invasive_lobular	HiSeq	c.3973del	p.(Arg1325Glyfs*11)	g.41243575del		5	
+ Krystal Gill	60	Y	N	2	 Mucinous	HiSeq	c.3994G>A	p.(Gly1332*)	g.41243554C>T		4	
+ Marta Young	37	Y	N	2	 Papillary	MiSeq	c.4002T>C	p.(=)	g.41243546A>G		4	
+ Sonya Barker	49	Y	Y	3	 Mixed_type	HiSeq	c.4013del	p.(Lys1338fs)	g.41243535del		4	
+ Miranda Hughes	59	Y	Y	3	 Invasive_ductal	HiSeq	c.4015dup	p.(Glu1339Glyfs*6)	g.41243533dup		5	"PS1,PS2,PM1,PM4"
+ Candace Ortiz	53	Y	Y	1	 Papillary	HiSeq	c.4015dupG	p.(Glu1339fs)	g.41243533dup		5	"PS1,PS2,PM1,PM4"
+ Mercedes Keller	35	Y	Y	1	 Invasive_ductal	HiSeq	c.4015G>A	p.(Glu1339Lys)	g.41243533C>T		5	"PS1,PM1,PM2,PP1"
+ Nicole Valdez	70	Y	Y	3	 Tubular	MiSeq	c.4025C>T	p.(Ser1342Leu)	g.41243523G>A		5	"PS1,PM1,PM2,PP1"
+ Ella Munoz	36	Y	N	2	 Tubular	MiSeq	c.4026A>C	p.(=)	g.41243522T>G		5	"PS4,PP1,PM1,PP6"
+ Carrie Fitzgerald	38			1	 Mucinous	HiSeq	c.4035del	"p.(Glu1346Lysfs*20), p.(Glu1346fs)"	g.41243513del		5	"PS4,PP1,PM1,PP6"
+ Ashley Maxwell	54	N	Y	2	 Medullary	HiSeq	c.4036G>A	"p.Glu1346Lys, p.(Glu1346Lys)"	g.41243512C>T		4	"PS1,PS2,PM1,PM4"
+ Shannon Simmons	58	N	Y	1	 Mucinous	HiSeq	c.4039A>G	"p.(Arg1347Gly), p.Arg1347Gly"	g.41243509T>C		5	"PS1,PM1,PM2,PP1"
+ Emily Hardy	40			1	 Invasive_lobular	HiSeq	c.4045A>C	p.Thr1349Pro	g.41243503T>G		3	"PS1,PM1,PM2,PP1"
+ Jean Fox	47			3	 Mixed_type	HiSeq	c.4046C>G	p.Thr1349Arg	g.41243502G>C		5	"PS4,PP1,PM1,PP6"
+ Gayle Webster	67			3	 Other	HiSeq	c.4046C>T	"p.(Thr1349Met), p.Thr1349Met"	g.41243502G>A		4	"PS1,PS2,PM1,PM4"
+ Stacey Jenkins	57	Y	N	3	 Mucinous	HiSeq	c.4054G>A	p.(Glu1352Lys)	g.41243494C>T		4	
+ Hannah Sparks	33	Y	N	1	 Mixed_type	HiSeq	c.4057G>T	p.(Glu1353*)	g.41243491C>A		4	"PS1,PM1,PM2,PP1"
+ Stella Walsh	66	Y	N	2	 Invasive_ductal	MiSeq	c.4065_4068del	"p.(Asn1355LysfsTer10), p.(Asn1355Lysfs*10), p.Asn1355fs, p.(Asn1355fs)"	g.41243480_41243483del		3	"PS4,PP1,PM1,PP6"
+ Mona Farmer	42	Y	N	3	 Medullary	MiSeq	c.4081A>C	p.Met1361Leu	g.41243467T>G		5	"PS1,PS2,PM1,PM4"
+ Lana Harris	51	Y	N	2	 Papillary	MiSeq	c.4088C>G	p.(Ser1363*)	g.41243460G>C		5	
+ Angie Jones	46	Y	N	3	 Tubular	MiSeq	c.4096G>A	p.(Gly1366Ser)	g.41243452C>T		5	"PS1,PM1,PM2,PP1"
+ Ann Woods	28	Y	N	2	 Invasive_lobular	MiSeq	c.4096+1G>A	?	g.41243451C>T		3	
+ Shelia Stephens	44	Y	N	1	 Other	MiSeq	c.4096+3A>T	p.?	g.41243449T>A		5	"PS1,PM1,PM2,PP1"
+ Claudia Payne	56	Y	N	1	 Medullary	MiSeq	c.4096+6G>A	p.?	g.41243446C>T		5	
+ Natalie Knight	50	Y	N	3	 Medullary	MiSeq	c.4096+27C>T	p.?	g.41243425G>A		5	"PS1,PS2,PM1,PM4"
+ Laverne Anderson	29	Y	N	1	 Other	MiSeq	c.4096+162delA	p.?	g.41243290delT		5	"PS4,PP1,PM1,PP6"
+ Elvira Lane	45			2	 Mixed_type	HiSeq	c.4097-141A>C	p.(=)	g.41243190T>G		3	"PS4,PP1,PM1,PP6"
+ Felicia Griffith	68	N		2	 Tubular	HiSeq	c.4097-21C>T	p.?	g.41243070G>A		5	"PS1,PS2,PM1,PM4"
+ Joann Reid	64	N		3	 Invasive_ductal	HiSeq	c.548-9A>G	p.?	g.41249315T>C		3	
+ Faith Foster	55	N		2	 Papillary	HiSeq	c.552T>C	p.=	g.41249302A>G		3	
+ Sophia Brooks	38	N	Y	2	 Invasive_lobular	HiSeq	c.556T>G	p.(Ser186Ala)	g.41249298A>C		3	"PS1,PM1,PM2,PP1"
+ Toni Tran	41	Y	Y	1	 Other	HiSeq	c.557C>A	"p.(Ser186Tyr), p.Ser186Tyr"	g.41249297G>T		5	
+ Lauren Harrison	26	Y	Y	2	 Tubular	HiSeq	c.(-20+1_-19-1)_(*1383_?)del	p.?	g.(?_41196312)_(41276133_41277287)del		5	"PS4,PP1,PM1,PP6"
+ Lorene Reynolds	49	Y	Y	3	 Invasive_lobular	HiSeq	c.-20+11C>T	p.?	g.41277277G>A		5	"PS1,PS2,PM1,PM4"
+ Mindy Tucker	40	Y	Y	1	 Other	MiSeq	c.-20+101C>G	p.(=)	g.41277187G>C		5	"PS4,PP1,PM1,PP6"
+ Geneva Howard	65	Y	Y	3	 Mixed_type	HiSeq	c.-19-134T>C	p.(=)	g.41276266A>G		4	"PS1,PM1,PM2,PP1"

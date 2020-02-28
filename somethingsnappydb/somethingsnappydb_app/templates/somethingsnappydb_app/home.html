@@ -1,0 +1,80 @@
+{% extends 'somethingsnappydb_app/base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div class="header">
+    <div class="snappy_header">
+        <img src= {% static 'Something_Snappy2.png' %} alt= 'Invalid picture' >
+        <p></p>
+    </div>
+</div>
+
+
+<p></p>
+<div class="container">
+    <div class="row">
+      <div class="col">
+            <div class ="card">
+                <div class="card-header">
+                    Patient statistics:
+                  </div>
+                <div class = "card-body">
+                    
+                    Patients: {{patients}} <br>
+                    Patients with Affected relatives: {{patientsAF}}
+                    <p></p>
+                    <a href="/patient" class="btn btn-primary">More</a>
+                </div>
+            </div>
+      </div>
+      <div class="col">
+        <div class ="card">
+            <div class="card-header">
+                Variant statistics:
+              </div>
+            <div class = "card-body">
+                Variants: {{variants}} <br>
+                Pathogenic Variants : {{pathogenic_variants}}<br>
+                <p></p>
+                <a href="/variant" class="btn btn-primary">More</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<p></p>
+<div class="container">
+    <div class="row">
+      <div class="col">
+            <div class ="card">
+                <div class="card-header">
+                    Error statistics:
+                  </div>
+                <div class = "card-body">
+                    Data entries missing: <br>
+                    Affected relatives: 21 <br>
+                    Proband: 9 <br>
+                    Evidence codes: 22<br>
+                </div>
+            </div>
+      </div>
+      <div class="col">
+        <div class ="card">
+            <div class="card-header">
+                Disclaimer:
+              </div>
+            <div class = "card-body">
+                Something Snappy Database is currently under development. <br>
+                <font color="red">Not for clinical use.</font> <br>
+                <p></p>
+                Please provide us with feedback at bioinformatics@gsm.genetics.nhs.uk<br>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

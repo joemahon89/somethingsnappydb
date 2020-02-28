@@ -1,0 +1,39 @@
+
+.snappy_header {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    color: white;
+    font-size: 20px;
+    top: 0;
+  }
+
+
+h1 a, h2 a {
+    color: #ffffff;
+}
+
+h5 a {
+    color: #ffffff;
+
+}
+
+h3 {
+    padding-left: 40;
+    padding-bottom: 20;
+}
+
+.db_table{
+    padding-left: 40;
+    padding-right: 40;
+}
+.snappy_container {
+
+    padding-left: 40;
+    padding-right: 40;
+
+}
+
+.col{
+    padding = 20px
+}
